@@ -538,6 +538,93 @@ body {
     }
 }
 
+/* PORTFOLIO SECTION */
+.portfolio {
+    padding: 80px 0;
+    background: #0a0f1a;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.card-desc {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* PRICE TABLE */
+.price-table {
+    background: rgba(30, 41, 59, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 30px;
+    margin-bottom: 40px;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.price-table h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.price-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.price-table th,
+.price-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.price-table th {
+    color: #3b82f6;
+    font-weight: 600;
+}
+
+.price-table td {
+    color: #cbd5e1;
+}
+
+.price-table tr:hover td {
+    background: rgba(59, 130, 246, 0.05);
+}
+
+.price-note {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #60a5fa;
+    text-align: center;
+}
+
+/* BOOKING FORM ADJUSTMENT */
+.booking-form h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* RESPONSIVE untuk tabel harga */
+@media (max-width: 600px) {
+    .price-table th,
+    .price-table td {
+        padding: 8px;
+        font-size: 13px;
+    }
+    
+    .price-table h3 {
+        font-size: 18px;
+    }
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .hero-content h1 {

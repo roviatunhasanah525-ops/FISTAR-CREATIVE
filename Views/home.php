@@ -4,14 +4,12 @@
 <section class="hero">
     <div class="overlay"></div>
     <div class="hero-content">
-        <div class="badge">⭐ Desain Profesional Mulai Rp7.000</div>
+        <div class="badge">⭐ Desain Profesional untuk UMKM</div>
         <h1>Fistar <span class="highlight">Creative</span></h1>
         <p>Bantu wujudkan ide kreatifmu menjadi desain yang keren, cepat, dan terjangkau.<br>Khusus untuk UMKM & kreator!</p>
         <div class="hero-btn">
-            <a href="https://wa.me/6281249524077" class="btn-primary" target="_blank">
-                <i class="fab fa-whatsapp"></i> Konsultasi Gratis
-            </a>
-            <a href="#menu" class="btn-secondary">Lihat Portfolio →</a>
+            <a href="#portfolio" class="btn-primary">Lihat Portofolio</a>
+            <a href="#booking" class="btn-secondary">Cek Harga & Pesan →</a>
         </div>
         <div class="stats">
             <div class="stat-item">
@@ -53,25 +51,25 @@
     </div>
 </section>
 
-<!-- MENU / LAYANAN SECTION -->
-<section class="menu" id="menu">
+<!-- PORTFOLIO SECTION (dulu menu, sekarang ganti jadi portofolio) -->
+<section class="portfolio" id="portfolio">
     <div class="container">
-        <span class="section-tag">Price List</span>
-        <h2>Pilihan <span class="highlight">Layanan Desain</span></h2>
-        <p class="section-subtitle">Desain profesional dengan harga yang ramah di kantong UMKM</p>
+        <span class="section-tag">Portofolio</span>
+        <h2>Hasil Karya <span class="highlight">Fistar Creative</span></h2>
+        <p class="section-subtitle">Beberapa contoh desain yang sudah kami buat untuk klien</p>
         
         <div class="grid">
-            <?php foreach($menu as $m): ?>
+            <?php foreach($menu as $item): ?>
             <div class="card">
                 <div class="card-img">
-                    <img src="assets/images/<?= $m['gambar']; ?>" alt="<?= $m['nama']; ?>">
-                    <div class="card-category"><?= $m['kategori']; ?></div>
+                    <img src="assets/images/<?= $item['gambar']; ?>" alt="<?= $item['nama']; ?>">
+                    <div class="card-category"><?= $item['kategori']; ?></div>
                 </div>
                 <div class="card-body">
-                    <h3><?= $m['nama']; ?></h3>
-                    <div class="price">Rp <?= number_format($m['harga'], 0, ',', '.'); ?></div>
-                    <a href="https://wa.me/6281249524077?text=Halo%20Fistar%20Creative%2C%20saya%20tertarik%20dengan%20layanan%20<?= urlencode($m['nama']); ?>" class="card-btn" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                    <h3><?= $item['nama']; ?></h3>
+                    <p class="card-desc"><?= $item['deskripsi']; ?></p>
+                    <a href="#booking" class="card-btn">
+                        <i class="fas fa-palette"></i> Request Desain
                     </a>
                 </div>
             </div>
@@ -80,23 +78,43 @@
     </div>
 </section>
 
-<!-- BOOKING / ORDER SECTION -->
+<!-- PRICE & BOOKING SECTION (harga dan form pemesanan digabung) -->
 <section class="booking" id="booking">
     <div class="booking-container">
         <div class="booking-text">
-            <span class="section-tag light">Pesan Sekarang</span>
+            <span class="section-tag light">Harga & Pemesanan</span>
             <h2>Mau Desain Keren <span class="highlight">Tanpa Ribet</span>?</h2>
-            <p>Isi form di bawah, tim Fistar Creative akan segera menghubungi kamu untuk konsultasi desain GRATIS!</p>
-            <div class="contact-highlight">
-                <i class="fab fa-whatsapp"></i> Atau langsung hubungi: <strong>0812-4952-4077</strong>
-            </div>
+            <p>Pilih layanan yang kamu butuhkan, isi form, dan tim kami akan segera menghubungi kamu!</p>
         </div>
+
+        <!-- TABEL HARGA SEDERHANA -->
+        <div class="price-table">
+            <h3>💰 Daftar Harga</h3>
+            <table>
+                <tr>
+                    <th>Jenis Desain</th>
+                    <th>Harga Mulai</th>
+                </tr>
+                <tr><td>Logotype</td><td>Rp 7.000</td></tr>
+                <tr><td>Logo Vector/Maskot</td><td>Rp 15.000</td></tr>
+                <tr><td>Logo Kombinasi</td><td>Rp 10.000</td></tr>
+                <tr><td>Banner/Daftar Menu</td><td>Rp 10.000</td></tr>
+                <tr><td>Poster</td><td>Rp 10.000</td></tr>
+                <tr><td>ID Card (3 Item)</td><td>Rp 10.000</td></tr>
+                <tr><td>Sablon</td><td>Rp 12.000</td></tr>
+                <tr><td>Undangan</td><td>Rp 12.000</td></tr>
+            </table>
+            <p class="price-note">⭐ Harga sudah termasuk revisi 2x + file siap cetak</p>
+        </div>
+
+        <!-- FORM PEMESANAN -->
         <form class="booking-form" action="https://wa.me/6281249524077" method="get" target="_blank">
+            <h3>📋 Form Pemesanan</h3>
             <input type="text" name="text" placeholder="Nama Lengkap" required>
             <input type="email" placeholder="Email (opsional)">
             <input type="tel" placeholder="Nomor WhatsApp" required>
             <select required>
-                <option value="">Pilih Layanan</option>
+                <option value="">Pilih Jenis Desain</option>
                 <option>Logotype</option>
                 <option>Logo Vector/Maskot</option>
                 <option>Logo Kombinasi</option>
@@ -110,5 +128,9 @@
             <textarea placeholder="Deskripsi singkat tentang desain yang diinginkan..." rows="3"></textarea>
             <button type="submit"><i class="fab fa-whatsapp"></i> Kirim ke WhatsApp</button>
         </form>
+
+        <div class="contact-highlight">
+            <i class="fab fa-whatsapp"></i> Atau langsung hubungi: <strong>0812-4952-4077</strong>
+        </div>
     </div>
 </section>

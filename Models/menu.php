@@ -6,51 +6,51 @@ class Menu {
         return [
             [
                 "nama" => "Logotype", 
-                "harga" => "7.000", 
                 "gambar" => "logotype.jpg",
-                "kategori" => "Logo"
+                "kategori" => "Logo",
+                "deskripsi" => "Desain tipografi logo untuk brand minimalis"
             ],
             [
                 "nama" => "Logo Vector/Maskot", 
-                "harga" => "15.000", 
                 "gambar" => "logo-vector.jpg",
-                "kategori" => "Logo"
+                "kategori" => "Logo",
+                "deskripsi" => "Desain maskot & vector karakter unik"
             ],
             [
                 "nama" => "Logo Kombinasi", 
-                "harga" => "10.000", 
                 "gambar" => "logo-kombinasi.jpg",
-                "kategori" => "Logo"
+                "kategori" => "Logo",
+                "deskripsi" => "Kombinasi icon + teks untuk brand"
             ],
             [
                 "nama" => "Banner/Daftar Menu", 
-                "harga" => "10.000", 
                 "gambar" => "banner.jpg",
-                "kategori" => "Promosi"
+                "kategori" => "Promosi",
+                "deskripsi" => "Desain banner & menu untuk UMKM"
             ],
             [
                 "nama" => "Poster", 
-                "harga" => "10.000", 
                 "gambar" => "poster.jpg",
-                "kategori" => "Promosi"
+                "kategori" => "Promosi",
+                "deskripsi" => "Poster event, promosi produk, dll"
             ],
             [
-                "nama" => "ID Card (3 Item)", 
-                "harga" => "10.000", 
+                "nama" => "ID Card", 
                 "gambar" => "idcard.jpg",
-                "kategori" => "Kartu"
+                "kategori" => "Kartu",
+                "deskripsi" => "ID Card karyawan & member"
             ],
             [
                 "nama" => "Sablon", 
-                "harga" => "12.000", 
                 "gambar" => "sablon.jpg",
-                "kategori" => "Kaos"
+                "kategori" => "Kaos",
+                "deskripsi" => "Desain sablon kaos & merchandise"
             ],
             [
                 "nama" => "Undangan", 
-                "harga" => "12.000", 
                 "gambar" => "undangan.jpg",
-                "kategori" => "Event"
+                "kategori" => "Event",
+                "deskripsi" => "Desain undangan digital & cetak"
             ],
         ];
     }
