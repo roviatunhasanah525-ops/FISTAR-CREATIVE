@@ -237,14 +237,14 @@ body {
     height: auto;
 }
 
-/* MENU */
-.menu {
+/* PORTFOLIO SECTION */
+.portfolio {
     padding: 80px 0;
     background: #0a0f1a;
     text-align: center;
 }
 
-.menu h2 {
+.portfolio h2 {
     font-size: 36px;
     margin-bottom: 15px;
 }
@@ -311,11 +311,11 @@ body {
     color: white;
 }
 
-.price {
-    font-size: 22px;
-    font-weight: 700;
-    color: #3b82f6;
+.card-desc {
+    font-size: 13px;
+    color: #94a3b8;
     margin-bottom: 15px;
+    line-height: 1.5;
 }
 
 .card-btn {
@@ -339,7 +339,7 @@ body {
     color: white;
 }
 
-/* BOOKING */
+/* BOOKING SECTION */
 .booking {
     padding: 80px 20px;
     background: linear-gradient(135deg, #0f172a, #0a0f1a);
@@ -358,11 +358,15 @@ body {
 }
 
 .booking-container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
-    text-align: center;
     position: relative;
     z-index: 2;
+}
+
+.booking-text {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .booking-text h2 {
@@ -372,80 +376,227 @@ body {
 
 .booking-text p {
     color: #cbd5e1;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* PRICE TABLE MODERN */
+.price-table {
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(12px);
+    border-radius: 24px;
+    padding: 30px;
+    margin-bottom: 40px;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.price-table h3 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.price-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: rgba(15, 23, 42, 0.6);
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+
+.price-item:hover {
+    background: rgba(59, 130, 246, 0.15);
+    transform: translateX(5px);
+}
+
+.price-name {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+.price-value {
+    color: #3b82f6;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.price-note {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #60a5fa;
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* FORM MODERN */
+.booking-form-wrapper {
+    background: rgba(30, 41, 59, 0.5);
+    backdrop-filter: blur(16px);
+    border-radius: 28px;
+    padding: 35px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    transition: all 0.3s;
+}
+
+.booking-form-wrapper:hover {
+    border-color: rgba(59, 130, 246, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.booking-form-wrapper h3 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.booking-form-wrapper h3 i {
+    color: #3b82f6;
+    margin-right: 10px;
+}
+
+.form-group {
+    position: relative;
     margin-bottom: 20px;
 }
 
-.contact-highlight {
-    background: rgba(59, 130, 246, 0.1);
-    padding: 12px 20px;
-    border-radius: 50px;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 30px;
-    border: 1px solid rgba(59, 130, 246, 0.3);
+.form-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3b82f6;
+    font-size: 16px;
+    z-index: 1;
 }
 
-.contact-highlight i {
-    color: #25D366;
-    font-size: 20px;
-}
-
-.booking-form {
-    background: rgba(30, 41, 59, 0.8);
-    backdrop-filter: blur(10px);
-    padding: 35px;
-    border-radius: 24px;
-    border: 1px solid rgba(59, 130, 246, 0.3);
-}
-
-.booking-form input,
-.booking-form select,
-.booking-form textarea {
+.form-group input,
+.form-group select,
+.form-group textarea {
     width: 100%;
-    padding: 14px;
-    margin: 10px 0;
+    padding: 14px 15px 14px 45px;
     border: 1px solid rgba(59, 130, 246, 0.3);
-    border-radius: 12px;
-    background: #0f172a;
+    border-radius: 14px;
+    background: rgba(15, 23, 42, 0.8);
     color: white;
     font-family: 'Poppins', sans-serif;
+    font-size: 14px;
     outline: none;
     transition: all 0.3s;
 }
 
-.booking-form input:focus,
-.booking-form select:focus,
-.booking-form textarea:focus {
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
-}
-
-.booking-form textarea {
+.form-group textarea {
+    padding: 14px 15px 14px 45px;
     resize: vertical;
 }
 
-.booking-form button {
+.form-group textarea+i {
+    top: 18px;
+    transform: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    background: rgba(15, 23, 42, 1);
+}
+
+.booking-form-wrapper button {
     width: 100%;
-    padding: 14px;
+    padding: 16px;
     border: none;
     background: linear-gradient(135deg, #3b82f6, #2563eb);
     color: white;
-    border-radius: 50px;
+    border-radius: 40px;
     cursor: pointer;
     font-weight: 600;
     font-size: 16px;
     transition: all 0.3s;
-    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin-top: 10px;
 }
 
-.booking-form button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+.booking-form-wrapper button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+    background: linear-gradient(135deg, #4b8ef7, #3b82f6);
+}
+
+/* CONTACT HIGHLIGHT - DIPERBAIKI */
+.contact-highlight {
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 60px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.contact-icon {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon i {
+    font-size: 28px;
+    color: white;
+}
+
+.contact-text {
+    flex: 1;
+    padding: 10px 0;
+}
+
+.contact-text span {
+    color: #94a3b8;
+    font-size: 13px;
+    display: block;
+}
+
+.contact-text strong {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.contact-btn {
+    background: rgba(59, 130, 246, 0.2);
+    padding: 12px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #60a5fa;
+    font-weight: 500;
+    transition: all 0.3s;
+    margin-right: 10px;
+}
+
+.contact-btn:hover {
+    background: #3b82f6;
+    color: white;
 }
 
 /* FOOTER */
@@ -527,6 +678,7 @@ body {
     font-size: 13px;
 }
 
+/* ANIMATIONS */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -535,93 +687,6 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-/* PORTFOLIO SECTION */
-.portfolio {
-    padding: 80px 0;
-    background: #0a0f1a;
-    text-align: center;
-}
-
-.portfolio h2 {
-    font-size: 36px;
-    margin-bottom: 15px;
-}
-
-.card-desc {
-    font-size: 13px;
-    color: #94a3b8;
-    margin-bottom: 15px;
-    line-height: 1.5;
-}
-
-/* PRICE TABLE */
-.price-table {
-    background: rgba(30, 41, 59, 0.8);
-    backdrop-filter: blur(10px);
-    border-radius: 24px;
-    padding: 30px;
-    margin-bottom: 40px;
-    border: 1px solid rgba(59, 130, 246, 0.3);
-}
-
-.price-table h3 {
-    color: white;
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
-.price-table table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.price-table th,
-.price-table td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.price-table th {
-    color: #3b82f6;
-    font-weight: 600;
-}
-
-.price-table td {
-    color: #cbd5e1;
-}
-
-.price-table tr:hover td {
-    background: rgba(59, 130, 246, 0.05);
-}
-
-.price-note {
-    margin-top: 20px;
-    font-size: 13px;
-    color: #60a5fa;
-    text-align: center;
-}
-
-/* BOOKING FORM ADJUSTMENT */
-.booking-form h3 {
-    color: white;
-    margin-bottom: 20px;
-    font-size: 20px;
-}
-
-/* RESPONSIVE untuk tabel harga */
-@media (max-width: 600px) {
-    .price-table th,
-    .price-table td {
-        padding: 8px;
-        font-size: 13px;
-    }
-    
-    .price-table h3 {
-        font-size: 18px;
     }
 }
 
@@ -644,7 +709,7 @@ body {
         font-size: 22px;
     }
     
-    .booking-form {
+    .booking-form-wrapper {
         padding: 25px;
     }
     
@@ -666,6 +731,37 @@ body {
         width: 80%;
         justify-content: center;
     }
+    
+    .price-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-highlight {
+        flex-direction: column;
+        text-align: center;
+        border-radius: 24px;
+    }
+    
+    .contact-icon {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .contact-btn {
+        margin: 0 0 15px 0;
+        width: calc(100% - 30px);
+        text-align: center;
+    }
+    
+    .form-group i {
+        left: 12px;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding-left: 40px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -683,5 +779,21 @@ body {
     
     .grid {
         grid-template-columns: 1fr;
+    }
+    
+    .booking-text h2 {
+        font-size: 28px;
+    }
+    
+    .price-table {
+        padding: 20px;
+    }
+    
+    .price-item {
+        padding: 10px 12px;
+    }
+    
+    .contact-text strong {
+        font-size: 16px;
     }
 }
