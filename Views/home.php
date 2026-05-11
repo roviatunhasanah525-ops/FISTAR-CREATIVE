@@ -51,7 +51,7 @@
     </div>
 </section>
 
-<!-- PORTFOLIO SECTION (dulu menu, sekarang ganti jadi portofolio) -->
+<!-- PORTFOLIO SECTION -->
 <section class="portfolio" id="portfolio">
     <div class="container">
         <span class="section-tag">Portofolio</span>
@@ -78,7 +78,7 @@
     </div>
 </section>
 
-<!-- PRICE & BOOKING SECTION (harga dan form pemesanan digabung) -->
+<!-- PRICE & BOOKING SECTION - MODERN -->
 <section class="booking" id="booking">
     <div class="booking-container">
         <div class="booking-text">
@@ -87,50 +87,99 @@
             <p>Pilih layanan yang kamu butuhkan, isi form, dan tim kami akan segera menghubungi kamu!</p>
         </div>
 
-        <!-- TABEL HARGA SEDERHANA -->
+        <!-- TABEL HARGA MODERN -->
         <div class="price-table">
-            <h3>💰 Daftar Harga</h3>
-            <table>
-                <tr>
-                    <th>Jenis Desain</th>
-                    <th>Harga Mulai</th>
-                </tr>
-                <tr><td>Logotype</td><td>Rp 7.000</td></tr>
-                <tr><td>Logo Vector/Maskot</td><td>Rp 15.000</td></tr>
-                <tr><td>Logo Kombinasi</td><td>Rp 10.000</td></tr>
-                <tr><td>Banner/Daftar Menu</td><td>Rp 10.000</td></tr>
-                <tr><td>Poster</td><td>Rp 10.000</td></tr>
-                <tr><td>ID Card (3 Item)</td><td>Rp 10.000</td></tr>
-                <tr><td>Sablon</td><td>Rp 12.000</td></tr>
-                <tr><td>Undangan</td><td>Rp 12.000</td></tr>
-            </table>
-            <p class="price-note">⭐ Harga sudah termasuk revisi 2x + file siap cetak</p>
+            <h3>💰 Daftar Harga Desain</h3>
+            <div class="price-grid">
+                <div class="price-item">
+                    <span class="price-name">Logotype</span>
+                    <span class="price-value">Rp 7.000</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-name">Logo Vector/Maskot</span>
+                    <span class="price-value">Rp 15.000</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-name">Logo Kombinasi</span>
+                    <span class="price-value">Rp 10.000</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-name">Banner/Daftar Menu</span>
+                    <span class="price-value">Rp 10.000</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-name">Poster</span>
+                    <span class="price-value">Rp 10.000</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-name">ID Card (3 Item)</span>
+                    <span class="price-value">Rp 10.000</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-name">Sablon</span>
+                    <span class="price-value">Rp 12.000</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-name">Undangan</span>
+                    <span class="price-value">Rp 12.000</span>
+                </div>
+            </div>
+            <p class="price-note">⭐ Harga sudah termasuk revisi 2x + file siap cetak (JPG, PNG, CDR, AI)</p>
         </div>
 
-        <!-- FORM PEMESANAN -->
-        <form class="booking-form" action="https://wa.me/6281249524077" method="get" target="_blank">
-            <h3>📋 Form Pemesanan</h3>
-            <input type="text" name="text" placeholder="Nama Lengkap" required>
-            <input type="email" placeholder="Email (opsional)">
-            <input type="tel" placeholder="Nomor WhatsApp" required>
-            <select required>
-                <option value="">Pilih Jenis Desain</option>
-                <option>Logotype</option>
-                <option>Logo Vector/Maskot</option>
-                <option>Logo Kombinasi</option>
-                <option>Banner/Daftar Menu</option>
-                <option>Poster</option>
-                <option>ID Card</option>
-                <option>Sablon</option>
-                <option>Undangan</option>
-                <option>Custom Lainnya</option>
-            </select>
-            <textarea placeholder="Deskripsi singkat tentang desain yang diinginkan..." rows="3"></textarea>
-            <button type="submit"><i class="fab fa-whatsapp"></i> Kirim ke WhatsApp</button>
-        </form>
+        <!-- FORM PEMESANAN MODERN -->
+        <div class="booking-form-wrapper">
+            <h3><i class="fas fa-pen-ruler"></i> Form Pemesanan</h3>
+            <form class="booking-form" action="https://wa.me/6281249524077" method="get" target="_blank">
+                <div class="form-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="text" placeholder="Nama Lengkap" required>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email (opsional)">
+                </div>
+                <div class="form-group">
+                    <i class="fab fa-whatsapp"></i>
+                    <input type="tel" placeholder="Nomor WhatsApp" required>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-palette"></i>
+                    <select required>
+                        <option value="">Pilih Jenis Desain</option>
+                        <option>Logotype</option>
+                        <option>Logo Vector/Maskot</option>
+                        <option>Logo Kombinasi</option>
+                        <option>Banner/Daftar Menu</option>
+                        <option>Poster</option>
+                        <option>ID Card</option>
+                        <option>Sablon</option>
+                        <option>Undangan</option>
+                        <option>Custom Lainnya</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-comment"></i>
+                    <textarea placeholder="Deskripsi singkat tentang desain yang diinginkan..." rows="3"></textarea>
+                </div>
+                <button type="submit">
+                    <i class="fab fa-whatsapp"></i> Kirim ke WhatsApp
+                </button>
+            </form>
+        </div>
 
+        <!-- CONTACT HIGHLIGHT - DIPERBAIKI -->
         <div class="contact-highlight">
-            <i class="fab fa-whatsapp"></i> Atau langsung hubungi: <strong>0812-4952-4077</strong>
+            <div class="contact-icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="contact-text">
+                <span>Atau langsung hubungi:</span>
+                <strong>0812-4952-4077</strong>
+            </div>
+            <a href="https://wa.me/6281249524077" class="contact-btn" target="_blank">
+                Chat Sekarang <i class="fas fa-arrow-right"></i>
+            </a>
         </div>
     </div>
 </section>
